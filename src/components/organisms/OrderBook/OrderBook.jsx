@@ -5,6 +5,8 @@ import Image from '../../atoms/Image/Image'
 import DropDownWIthValue from '../../molecules/DropdownWIthValue/DropDownWIthValue'
 import OrderIcons from '../../molecules/OrderIcons/OrderIcons'
 import OrderOptionsPanel from '../../molecules/OrderOptionsPanel/OrderOptionsPanel'
+import Table from '../../molecules/Table/Table'
+import TableBody from '../../molecules/Table/TableBody/TableBody'
 const OrderBook = () => {
   return (
     <div class="orderbook">
@@ -22,36 +24,9 @@ const OrderBook = () => {
 
     {/* <!-- top order table --> */}
     <div class="orderbook-table">
-        <div class="orderbook-table__header-row">
-            <div class="orderbook-table__header-cell orderbook-table__header-cell--price">Price(USDT)</div>
-            <div class="orderbook-table__header-cell orderbook-table__header-cell--amounts">Amounts(BTC)</div>
-            <div class="orderbook-table__header-cell orderbook-table__header-cell--total">Total</div>
-        </div>
-        <div class="orderbook-table__body-row">
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--price">36920.12</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="orderbook-table__body-row">
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--price">36920.12</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="orderbook-table__body-row">
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--price">36920.12</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="orderbook-table__body-row">
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--price">36920.12</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="orderbook-table__body-row">
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--price">36920.12</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="orderbook-table__body-cell orderbook-table__body-cell--total">28,020.9</div>
-        </div>
+        <Table />
+       
+        
     </div>
 
     {/* <!-- readings --> */}
@@ -65,26 +40,10 @@ const OrderBook = () => {
 
     {/* <!-- bottom order table --> */}
     <div class="bottom-orderbook-table">
-        <div class="bottom-orderbook-table__body-row">
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--price">36920.12</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="bottom-orderbook-table__body-row">
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--price">36920.12</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="bottom-orderbook-table__body-row">
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--price">36920.12</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--total">28,020.9</div>
-        </div>
-        <div class="bottom-orderbook-table__body-row">
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--price">36920.12</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--amounts">0.758965</div>
-            <div class="bottom-orderbook-table__body-cell bottom-orderbook-table__body-cell--total">28,020.9</div>
-        </div>
+       <TableBody price="36920.12" amount="0.758965" total="28,020.9" />
+       <TableBody price="36920.12" amount="0.758965" total="28,020.9" />
+       <TableBody price="36920.12" amount="0.758965" total="28,020.9" />
+       <TableBody price="36920.12" amount="0.758965" total="28,020.9" />
     </div>
     
     {/* <!-- bottom order table --> */}

@@ -1,0 +1,4 @@
+.orderbook-table {
+    display: flex;
+    flex-direction: column;
+}

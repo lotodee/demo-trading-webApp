@@ -1,0 +1,14 @@
+.orderbook-table__body-cell {
+    font-size: 17px;
+    flex: 1;
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    text-align: center;
+    gap: 10px;
+    padding: 5px;
+    color: var(--color-light);
+}
+
+.orderbook-table__body-cell--price {
+    color: rgba(255, 104, 56, 1) !important;
+}
