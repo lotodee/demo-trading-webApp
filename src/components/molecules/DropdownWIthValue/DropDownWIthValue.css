@@ -1,0 +1,19 @@
+.orderbook__top-right {
+    display: flex;
+    align-items: center;
+    background-color: rgba(53, 57, 69, 1);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 4px;
+    color: var(--color-light);
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+
+.orderbook__value {
+    margin: 0;
+}
+
+.orderbook__dropdown-icon {
+    cursor: pointer;
+}

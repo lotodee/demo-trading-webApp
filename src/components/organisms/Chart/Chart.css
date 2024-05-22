@@ -1,0 +1,9 @@
+.main__chart-image {
+    
+    border: 2px solid green;
+    object-fit: contain;
+    background-color: var(--bgcolor-light);
+    border: 1px solid var(--color-border);
+    margin: 5px;
+    border-radius: 8px;
+}

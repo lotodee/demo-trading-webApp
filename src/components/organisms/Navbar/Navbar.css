@@ -1,0 +1,38 @@
+.nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__left-logo {
+    border-right: 0.5px solid var(--color-dark);
+    padding-right: 30px;
+}
+
+.nav__left-texts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    font-family: 'Satoshi';
+    font-weight: 500;
+    
+}
+
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: auto;
+}
+
+

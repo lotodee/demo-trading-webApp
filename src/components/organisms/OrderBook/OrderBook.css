@@ -1,0 +1,129 @@
+.orderbook {
+    flex: 1;
+    background-color: var(--bgcolor-dark);
+    border: 1px solid var(--color-border);
+    margin: 5px;
+    border-radius: 8px;
+    
+}
+
+.orderbook__options-panel {
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-family: var(--font-family);
+    background-color: rgba(0, 0, 0, 0.16);
+    color: var(--color-light);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.orderbook__options-item {
+    flex: 1;
+    text-align: center;
+    color: rgba(167, 177, 188, 1);
+}
+
+.orderbook__options-item--active {
+    background-color: var(--bgcolor-dark);
+    border: 1px solid var(--color-border);
+    padding: 5px;
+    border-radius: 8px;
+    color: var(--color-light);
+}
+
+
+
+.orderbook__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.orderbook__icon {
+    cursor: pointer;
+}
+
+
+/*  top order table */
+.orderbook-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderbook-table__header-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.orderbook-table__header-cell {
+    font-size: 18px;
+    flex: 1;
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: -15px;
+}
+
+.orderbook-table__body-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.orderbook-table__body-cell {
+    font-size: 17px;
+    flex: 1;
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    text-align: center;
+    gap: 10px;
+    padding: 5px;
+    color: var(--color-light);
+}
+
+.orderbook-table__body-cell--price {
+    color: rgba(255, 104, 56, 1) !important;
+}
+
+.readings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 30px;
+    margin: 20px;
+    font-family: var(--font-family);
+    color: var(--color-light);
+}
+
+.readings__text--active {
+    color: rgba(37, 194, 110, 1) !important;
+}
+
+.bottom-orderbook-table__body-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.bottom-orderbook-table__body-cell {
+    font-size: 17px;
+    flex: 1;
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    text-align: center;
+    gap: 10px;
+    padding: 5px;
+    color: var(--color-light);
+}
+
+.bottom-orderbook-table__body-cell--price {
+    color: rgba(37, 194, 110, 1) !important;
+}
