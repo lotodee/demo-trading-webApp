@@ -21,6 +21,9 @@ const NavLink = ({className}) => {
        <Text text="Exchange" className="nav__left-text" />
        </Link>
            
+       <Link to="/auth" className='link'>
+       <Text text="AuthScreen" className="nav__left-text" />
+       </Link>
             
            
         </div>
