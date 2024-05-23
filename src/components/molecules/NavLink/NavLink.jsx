@@ -6,13 +6,21 @@ const NavLink = ({className}) => {
   return (
     <>
       <div class={className}>
-      
+        <Link to="/wallets">
         <Text text="Wallets"  className="nav__left-text"/>
-        
+        </Link>
       
-        <Text text="Roqqu Hub" className="nav__left-text"/>
        
-            <Text text="Exchange" className="nav__left-text" />
+        
+      <Link to="/roqquhub">
+      <Text text="Roqqu Hub" className="nav__left-text"/>
+      </Link>
+    
+
+       <Link to="/exchange">
+       <Text text="Exchange" className="nav__left-text" />
+       </Link>
+           
             
            
         </div>
