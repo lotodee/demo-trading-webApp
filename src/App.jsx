@@ -18,10 +18,10 @@ function App() {
 <Router>
   <Routes>
   <Route path='/' element={<Homepage />} />
-  <Route path='/exchange' element={<Exchange />} />
-  <Route path='/roqquhub' element={<RoqquHub />} />
-  <Route path='/wallets' element={<Wallet />} />
-  <Route path='/auth' element={<AuthScreen />} />
+  <Route path='https://demo-trading-web-app.vercel.app/exchange' element={<Exchange />} />
+  <Route path='https://demo-trading-web-app.vercel.app/roqquhub' element={<RoqquHub />} />
+  <Route path='https://demo-trading-web-app.vercel.app/wallets' element={<Wallet />} />
+  <Route path='https://demo-trading-web-app.vercel.app/auth' element={<AuthScreen />} />
   </Routes>
 </Router>
 
