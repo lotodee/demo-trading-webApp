@@ -1,0 +1,15 @@
+input {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-dark);
+    text-align: right;
+}
+
+input::placeholder {
+    color: var(--color-dark);
+}
+
+input:focus {
+    outline: none;
+}

@@ -1,4 +1,5 @@
 
+import Divider from '../../atoms/DIvider/Divider'
 import BuyandSell from '../../organisms/BuyandSell/BuyandSell'
 import Chart from '../../organisms/Chart/Chart'
 import DisplayPanel from '../../organisms/DisplayPanel/DisplayPanel'
@@ -10,6 +11,7 @@ const Homepage = () => {
   return (
     <div>
      <MainTemplate>
+      <Divider className="divider"/>
       <DisplayPanel/>
       <main className='main'>
       <div className="main__left">

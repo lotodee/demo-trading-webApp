@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import "./BuyandSell.css"
 import ic  from "../../../assets/images/u_info-circle.svg"
 import ud  from "../../../assets/images/u_angle-down.svg"
 import ck  from "../../../assets/images/u_check.svg"
+import BlankPanel from '../../atoms/BlankPanel/BlankPanel'
+import TextButton from '../../atoms/TextButton/TextButton'
+import InputContainer from '../../atoms/InputContainer/InputContainer'
+import LabeledIcon from '../../molecules/LabeledIcon/LabeledIcon'
+import StyledInput from '../../atoms/StyledInput/StyledInput'
+import Text from '../../atoms/Text/Text'
+import Image from '../../atoms/Image/Image'
+import LabelandValue from '../../molecules/LabelandValue/LabelandValue'
+import Button from '../../atoms/Button/Button'
+import Divider from '../../atoms/DIvider/Divider'
 const BuyandSell = () => {
 
 
@@ -29,28 +39,30 @@ const BuyandSell = () => {
     };
 
   return (
-<div class="buy-sell">
+<div className="buy-sell">
         {/* <!-- buy sell options panel --> */}
-        <div class="buy-sell__options-panel">
-            <div class="buy-sell__options-item buy-sell__options-item--buy">Buy</div>
-            <div class="buy-sell__options-item buy-sell__options-item--sell">Sell</div>
-        </div>
+
+        <BlankPanel>
+            <TextButton text="Buy" className="buy-sell__options-item buy-sell__options-item--buy"/>
+            <TextButton text="Sell" className="buy-sell__options-item buy-sell__options-item--sell"/>
+        </BlankPanel>
+     
         {/* <!-- buy sell options panel -->
        
         <!-- buy sell limit options panel --> */}
-        <div class="buy-sell__limit-options">
-            <div class="buy-sell__limit-option buy-sell__limit-option--limit">Limit</div>
-            <div class="buy-sell__limit-option buy-sell__limit-option--market">Market</div>
-            <div class="buy-sell__limit-option buy-sell__limit-option--stop-limit">Stop-Limit</div>
+        <div className="buy-sell__limit-options">
+            <div className="buy-sell__limit-option buy-sell__limit-option--limit">Limit</div>
+            <div className="buy-sell__limit-option buy-sell__limit-option--market">Market</div>
+            <div className="buy-sell__limit-option buy-sell__limit-option--stop-limit">Stop-Limit</div>
         </div>
         {/* <!-- buy sell limit options panel -->
 
         <!-- buy sell input panels --> */}
-        <div class="buy-sell__input-panel">
-            <div class="buy-sell__input buy-sell__input--limit">
-                <div class="buy-sell__input-label buy-sell__input-label--limit">
-                    <p class="buy-sell__label-text">Limit price</p>
-                    <img src={ic} alt="" class="buy-sell__label-icon"/>
+        <div className="buy-sell__input-panel">
+            {/* <div className="buy-sell__input buy-sell__input--limit">
+                <div className="buy-sell__input-label buy-sell__input-label--limit">
+                    <p className="buy-sell__label-text">Limit price</p>
+                    <img src={ic} alt="" className="buy-sell__label-icon"/>
                 </div>
                 <input
                         type="text"
@@ -59,79 +71,104 @@ const BuyandSell = () => {
                         value={limitPrice}
                         onChange={handleLimitPriceChange}
                     />
-            </div>
+            </div> */}
 
-            <div class="buy-sell__input buy-sell__input--amount">
-                <div class="buy-sell__input-label buy-sell__input-label--amount">
-                    <p class="buy-sell__label-text">Amount</p>
-                    <img src={ic} alt="" class="buy-sell__label-icon"/>
-                </div>
-                <input
-                        type="text"
-                        placeholder="0.00 USD"
-                        className="buy-sell__input-field"
-                        value={amount}
-                        onChange={handleAmountChange}
-                    />
-            </div>
+<InputContainer>
+<LabeledIcon labelText="LimitPrice" LabelIcon={ic}/>
+<StyledInput onChange={handleLimitPriceChange} value={limitPrice} placeholder="0.00USD"/>
+</InputContainer>
 
-            <div class="buy-sell__input buy-sell__input--type">
-                <div class="buy-sell__input-label buy-sell__input-label--type">
-                    <p class="buy-sell__label-text">Type</p>
-                    <img src={ic} alt="" class="buy-sell__label-icon"/>
+
+<InputContainer>
+<LabeledIcon labelText="Amount" LabelIcon={ic}/>
+<StyledInput onChange={handleAmountChange} value={amount} placeholder="0.00USD"/>
+</InputContainer>
+
+
+<InputContainer>
+<LabeledIcon labelText="Type" LabelIcon={ic}/>
+<div className="buy-sell__type-options">
+
+    <Text text="Good till cancelled" className="buy-sell__type-text"/>
+    <Image src={ud}/>
+                 
+                  
                 </div>
-                <div class="buy-sell__type-options">
-                    <p class="buy-sell__type-text">Good till cancelled</p>
-                    <img src={ud} alt=""/>
-                </div>
-            </div>
+</InputContainer>
+           
         </div>
         {/* <!-- buy sell input panels -->
 
         <!-- checkbox --> */}
-        <div class="buy-sell__checkbox">
-            <img src={ck} alt="" class="buy-sell__checkbox-image"/>
-            <div class="buy-sell__checkbox-post">
-                <p class="buy-sell__label-text">Post Only</p>
-                <img src={ic} alt="" class="buy-sell__label-icon"/>
+        <div className="buy-sell__checkbox">
+           
+         <Image src={ck} className="buy-sell__checkbox-image"/>
+            <div className="buy-sell__checkbox-post">
+            <LabeledIcon labelText="Post" LabelIcon={ic}/>
             </div>
         </div>
         {/* <!-- checkbox -->
 
         <!-- total --> */}
-        <div class="buy-sell__total">
-            <p class="buy-sell__label-text">Total</p>
-            <p className="buy-sell__label-text">{total.toFixed(2)}</p>
+        <div className="buy-sell__total">
+            <Text text="Total" className="buy-sell__label-text"/>
+            <Text text={total.toFixed(2)} className="buy-sell__label-text"/>
+          
+           
         </div>
         {/* <!-- total --> */}
 
-        <button class="buy-sell__btn buy-sell__btn--buy">
-            Buy BTC
-        </button>
-        <hr class="buy-sell__divider"/>
+<Button 
+className="buy-sell__btn buy-sell__btn--buy"
+buttonText="Buy BTC"
+/>
+    <Divider className="buy-sell__divider"/>
+  
 
         {/* <!-- values panel --> */}
-        <div class="values-panel">
-            <div class="values-panel__top">
-                <div class="values-panel__top-left">
-                    <p class="values-panel__text">Total account value</p>
-                    <p class="values-panel__value">0.00</p>
-                </div>
-                <div class="values-panel__top-right">
-                    <p class="values-panel__currency">NGN</p>
-                    <img src={ud} alt="" class="values-panel__currency-icon"/>
-                </div>
-            </div>
-            <div class="values-panel__bottom">
-                <div class="values-panel__bottom-left">
-                    <p class="values-panel__text">Open Orders</p>
-                    <p class="values-panel__value">0.00</p>
-                </div>
-                <div class="values-panel__bottom-right">
-                    <p class="values-panel__text">Available</p>
-                    <p class="values-panel__value">0.00</p>
+        <div className="values-panel">
+            <div className="values-panel__top">
+                {/* <div className="values-panel__top-left">
+                    <Text text="Total account value" className="values-panel__text"/>
+                    <Text text="0.00" className="values-panel__value"/>
+                    
+                </div> */}
+                <LabelandValue
+                labelText="Total account value"
+                valueText="0.00"
+             
+                
+                />
+                
+                <div className="values-panel__top-right">
+                    <p className="values-panel__currency">NGN</p>
+                    <img src={ud} alt="" className="values-panel__currency-icon"/>
                 </div>
             </div>
+            <div className="values-panel__bottom">
+               
+                  <LabelandValue
+                labelText="Open Orders"
+                valueText="0.00"
+           
+                
+                /> 
+
+<LabelandValue
+                labelText="Available"
+                valueText="0.00"
+           
+                
+                /> 
+          
+         
+            </div>
+            <Button
+            className="btn btn--deposit"
+              buttonText="Deposit"
+
+            />
+          
         </div>
         {/* <!-- values panel --> */}
     </div>

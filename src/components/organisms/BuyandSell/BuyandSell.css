@@ -9,7 +9,11 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.buy-sell__divider{
+ 
+    border: .1px solid var(--color-divider);
+    margin: 15px;
+  }
 .buy-sell__options-item {
     flex: 1;
     text-align: center;
@@ -170,20 +174,8 @@ input:focus {
     justify-content: space-between;
 }
 
-.values-panel__top-left, .values-panel__bottom-left, .values-panel__bottom-right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-.values-panel__text {
-    color: var(--color-dark);
-}
 
-.values-panel__value {
-    color: var(--color-light);
-    font-weight: 700;
-}
 
 .values-panel__top-right {
     display: flex;
@@ -198,4 +190,16 @@ input:focus {
 .values-panel__bottom {
     display: flex;
     gap: 150px;
+}
+
+.btn--deposit{
+    background-color: rgba(39, 100, 255, 1);
+    font-family: 'Satoshi';
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    width: 80px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
 }

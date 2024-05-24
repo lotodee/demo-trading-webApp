@@ -1,0 +1,14 @@
+.values-panel__top-label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.values-panel__text {
+    color: var(--color-dark);
+}
+
+.values-panel__value {
+    color: var(--color-light);
+    font-weight: 700;
+}

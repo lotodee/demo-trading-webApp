@@ -1,8 +1,17 @@
-import React from 'react'
+
 import "./Orders.css"
+
+import Text from "../../atoms/Text/Text"
+
 const Orders = () => {
   return (
-    <div>Orders</div>
+
+  
+    <div className="orderspanel-container">
+<Text text="Orders"/>
+    </div>
+   
+
   )
 }
 

@@ -1,8 +1,9 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import "./BlankPanel.css"
 const BlankPanel = ({children}) => {
   return (
-    <div class="orderbook__options-panel">
+    <div className="orderbook__options-panel">
         {children}
     </div>
   )

@@ -1,0 +1,15 @@
+.footer__social-media-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+}
+.footer__social-media-icon:hover{
+background-color:rgb(146, 152, 167);
+
+border-radius: 20%;
+}
+.footer__social-media-icon-img {
+    width: 100%;
+    height: auto;
+}

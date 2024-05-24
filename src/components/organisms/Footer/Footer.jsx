@@ -1,8 +1,9 @@
 
 import "./Footer.css"
-import fb  from "../../../assets/images/facebook.svg"
-import x  from "../../../assets/images/twitter.svg"
-import ig  from "../../../assets/images/instagram.svg"
+import fbicon  from "../../../assets/images/facebook.svg"
+import xicon  from "../../../assets/images/twitter.svg"
+import igicon  from "../../../assets/images/instagram.svg"
+import IconLink from "../../molecules/IconLink/IconLink"
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,18 +12,13 @@ const Footer = () => {
             &copy; 2024  <span>RAVENPAY</span>   All rights reserved.
         </div>
         <div className="footer__social-media">
-            <a href="https://facebook.com" className="footer__social-media-icon">
-                <img src={fb} alt="Facebook"/>
-            </a>
-            <a href="https://twitter.com" className="footer__social-media-icon">
-                <img src={x} alt="Twitter"/>
-            </a>
-            <a href="https://instagram.com" className="footer__social-media-icon">
-                <img src={ig} alt="Instagram"/>
-            </a>
+               <IconLink path="https://facebook.com" LinkClassName="footer__social-media-icon" IconClassName="footer__social-media-icon-img" src={fbicon}/>
+               <IconLink path="https://twitter.com" LinkClassName="footer__social-media-icon" IconClassName="footer__social-media-icon-img" src={xicon}/>
+               <IconLink path="https://instagram.com" LinkClassName="footer__social-media-icon" IconClassName="footer__social-media-icon-img" src={igicon}/>
+           
         </div>
         <div className="footer__contact">
-            <a href="mailto:contact@yourcompany.com" className="footer__contact-link">ravenpay@ravenpay.com</a>
+            <p className="footer__contact-link">ravenpay@ravenpay.com</p>
         </div>
     </div>
 </footer>

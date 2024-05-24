@@ -1,0 +1,15 @@
+.orderspanel-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    font-size: 40px;
+    background-color: var(--bgcolor-light);
+    border-radius: 8px;
+margin: 5px;
+    color: var(--color-light);
+
+ 
+}

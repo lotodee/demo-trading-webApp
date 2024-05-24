@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./DisplayPanel.css"
 import logo from "../../../assets/images/dummylogo.svg"
 import dropdown from "../../../assets/images/dropdown.svg"
@@ -12,14 +12,14 @@ import Panelinfo from '../../molecules/Panelnfo/Panelinfo'
 
 const DisplayPanel = () => {
   return (
-    <section class="panel">
-    <div class="panel__left">
+    <section className="panel">
+    <div className="panel__left">
        <Image src={logo}/>
        
         <Text text="BTC/USDT" className="panel__left-text"/>
        <Image src={dropdown}/>
     </div>
-    <div class="panel__right">
+    <div className="panel__right">
         <Text text="$20,634" className="panel__balance"/>
         
       <Panelinfo text="520.80+1.25%" src={change} className="panel__info-bottom--change"/>

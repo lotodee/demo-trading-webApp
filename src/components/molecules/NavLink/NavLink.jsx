@@ -1,11 +1,12 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import Text from '../../atoms/Text/Text';
 import { Link } from 'react-router-dom';
 import './NavLink.css';
 const NavLink = ({className}) => {
   return (
     <>
-      <div class={className}>
+      <div className={className}>
         <Link to="/wallets" className='link'>
         <Text text="Wallets"  className="nav__left-text"/>
         </Link>
