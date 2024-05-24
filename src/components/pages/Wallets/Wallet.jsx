@@ -1,10 +1,14 @@
-import React from 'react'
+
 import useReloadOnMount from '../../../../useReloadOnMount'
+import MainTemplate from '../../templates/MainTemplate/MainTemplate'
 import "./Wallet.css"
 const Wallet = () => {
   useReloadOnMount()
   return (
-    <div className='wallet'>Wallet</div>
+    <MainTemplate>
+ <div className='wallet'>Wallet</div>
+    </MainTemplate>
+   
   )
 }
 

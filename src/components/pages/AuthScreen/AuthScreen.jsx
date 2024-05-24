@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Gravatar from 'react-gravatar';
 import useReloadOnMount from '../../../../useReloadOnMount';
 import "./AuthScreen.css"
+import MainTemplate from '../../templates/MainTemplate/MainTemplate';
 function AuthScreen() {
     useReloadOnMount()
   const [email, setEmail] = useState('');
@@ -24,6 +25,7 @@ function AuthScreen() {
   };
 
   return (
+    <MainTemplate>
     <div className="auth-screen">
       <h1>Auth Screen</h1>
       <div className='input-btn'>
@@ -66,6 +68,7 @@ function AuthScreen() {
         </div>
       )}
     </div>
+    </MainTemplate>
   );
 }
 

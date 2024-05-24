@@ -1,5 +1,4 @@
-import React from 'react'
-import Text from '../../atoms/Text/Text'
+
 import BuyandSell from '../../organisms/BuyandSell/BuyandSell'
 import Chart from '../../organisms/Chart/Chart'
 import DisplayPanel from '../../organisms/DisplayPanel/DisplayPanel'
@@ -13,16 +12,16 @@ const Homepage = () => {
      <MainTemplate>
       <DisplayPanel/>
       <main className='main'>
-      <div class="main__left">
-      <section class="main__section main__section--top">
+      <div className="main__left">
+      <section className="main__section main__section--top">
         <Chart/>
        <OrderBook/>
       </section>
-      <section class="main__section main__section--bottom">
+      <section className="main__section main__section--bottom">
 <Orders/>
       </section>
       </div>
-      <aside class="main__right">
+      <aside className="main__right">
       <BuyandSell/>
       </aside>
       </main>
