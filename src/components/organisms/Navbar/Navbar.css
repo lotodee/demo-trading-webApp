@@ -3,8 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
+    position: relative;
+}
+.big-icons {
+  
+    cursor: pointer;
+}
 .nav__left {
     display: flex;
     align-items: center;
@@ -34,5 +39,4 @@
     gap: 10px;
     margin-left: auto;
 }
-
 

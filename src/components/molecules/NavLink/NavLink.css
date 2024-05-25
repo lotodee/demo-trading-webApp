@@ -1,16 +1,5 @@
 
 
-.nav__left-texts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    font-family: 'Satoshi';
-    font-weight: 500;
-    color :red;
-  
-  
-}
 
 .link{
     text-decoration: none;
