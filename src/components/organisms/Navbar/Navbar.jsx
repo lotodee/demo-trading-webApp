@@ -10,8 +10,7 @@ import Image from '../../atoms/Image/Image'
 import ProfileBox from '../../molecules/ProfileBox/ProfileBox'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import Text from '../../atoms/Text/Text'
-import Divider from '../../atoms/DIvider/Divider'
+
 import SideNavbar from '../../molecules/SideNavbar/SideNavbar'
 const Navbar = () => {
 

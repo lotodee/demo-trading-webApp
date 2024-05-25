@@ -17,9 +17,22 @@
     border: 1px solid var(--color-border);
     background-color: var(--bgcolor-light);
     margin: 5px;
-   
-}
 
+   
+   
+
+}
+.panel-small{
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background-color: var(--bgcolor-light);
+    margin: 5px;
+
+   flex-direction: column;
+
+}
 .panel__left {
     display: flex;
     gap: 20px;
@@ -45,6 +58,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    overflow-x: auto;
+  white-space: nowrap; 
 }
 
 .panel__balance {
@@ -52,6 +68,7 @@
     font-size: 18px;
     font-family: var(--font-family);
     padding: 5px;
+    
 }
 
 .panel__info {
